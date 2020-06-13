@@ -32,6 +32,7 @@
     "no-alert": "off",
     "no-console": "off",
     "no-shadow": "off",
+    "camelcase": "off",
     "prettier/prettier": "error",
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
@@ -40,7 +41,9 @@
     "react-hooks/exhaustive-deps": "warn",
     "no-unused-expressions": "off",
     "import/prefer-default-export": "off",
+    "import/no-duplicates": "off",
     "@typescript-eslint/camelcase": "off",
+
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/explicit-function-return-type": [
       "error",
