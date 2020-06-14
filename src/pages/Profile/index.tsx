@@ -182,7 +182,17 @@ const Profile: React.FC = () => {
               <Title>Meu Perfil</Title>
             </View>
 
-            <Form initialData={user} ref={formRef} onSubmit={handleProfile}>
+            <Form
+              initialData={{
+                name: user.name,
+                email: user.email,
+                password: '',
+                old_password: '',
+                password_confirmation: '',
+              }}
+              ref={formRef}
+              onSubmit={handleProfile}
+            >
               <Input
                 ref={nameInputRef}
                 autoCapitalize="words"

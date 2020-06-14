@@ -15,7 +15,7 @@ import { Container, TextInput, Icon } from './styles';
 interface InputProps extends TextInputProps {
   name: string;
   icon: string;
-  containerStyle?: {};
+  containerStyle?: Record<string, unknown>;
 }
 
 interface InputValueReference {
@@ -30,7 +30,6 @@ const Input: React.RefForwardingComponent<InputRef, InputProps> = (
   { name, icon, containerStyle = {}, ...rest },
   ref,
 ) => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const inputElementRef = useRef<any>(null);
 
   const { registerField, fieldName, defaultValue, error } = useField(name);
